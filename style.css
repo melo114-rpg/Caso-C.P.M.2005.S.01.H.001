@@ -1,0 +1,93 @@
+body {
+    background-color: #f0e6d2; /* Cor de fundo creme para o layout antigo */
+    color: #4b4b4b; /* Cor de texto cinza escuro */
+    font-family: 'Courier New', Courier, monospace; /* Fonte com estilo de máquina de escrever */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container-inicial, .container-final {
+    max-width: 600px;
+    padding: 2rem;
+    border: 2px solid #4b4b4b;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fffaf0;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4b4b4b;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #4b4b4b;
+    background-color: #fffaf0;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2e2e2e;
+}
+
+.tela-misteriosa {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.11s ease-in-out;
+    z-index: 1000;
+}
+
+#frase-anjo {
+    font-size: 4rem;
+    opacity: 0;
+    animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.container-final h1 {
+    font-size: 2.5rem;
+    border: none;
+}
+
+.container-final a {
+    color: #00008b;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
