@@ -70,9 +70,11 @@ button:hover {
 }
 
 #frase-anjo {
-    font-size: 4rem;
+    font-size: 3rem;
+    font-family: "Courier New", Courier, monospace; /* fonte crua */
     opacity: 0;
-    animation: fadeInOut 2s forwards;
+    animation: fadeInOut 2s forwards; /* animação dura 7s (aparece, fica e depois some) */
+}
 }
 
 @keyframes fadeInOut {
